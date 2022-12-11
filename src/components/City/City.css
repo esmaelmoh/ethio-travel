@@ -1,0 +1,245 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+.about-us{
+    margin-top: 30px;
+    text-align: center;
+    
+    text-align: center;
+    position: relative;
+    
+}
+.about-us h1{
+    font-size: 3rem;
+    color:   rgb(41, 35, 35);
+  }
+  .barr{
+    display: flex;
+    justify-content: center;
+  }
+.bar{
+    position: absolute;
+    text-align: center;
+    width: 6rem;
+    height: 4px;
+    background-color: rgb(41, 228, 17);
+}
+article{
+    padding-top: 5rem;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 5rem;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+
+.container{
+    border-radius: 20px;
+    width: 350px;
+    /* height: 450px; */
+    background-color: rgb(255, 255, 255);
+    /* box-shadow: 0 3rem 6rem rgba(0, 0, 0,0.1); */
+    box-shadow:0 0.5rem 1rem rgba(1, 36, 21, 0.075) ;
+}
+.container img{
+    border-radius: 20px;
+    width: 350px;
+    height: 350px;
+}
+.desc-container{
+    text-align: center;
+    padding:20px 0 20px 0 ;
+    height: 4rem;
+    width: 80%;
+    overflow: hidden;
+    margin: auto;
+}
+.desc-container p{
+    color:rgb(34, 34, 34);
+}
+.container .img-container h2{
+    text-align: center;
+    color:  rgb(4, 34, 0);
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .img-container button{
+    margin: 10px auto;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 12px;
+    background-color: rgb(41, 35, 35);
+    transition: 0.3s transform;
+}
+.container .img-container button:hover{
+    /* margin-top: 5px; */
+    transform: scale(1.2);
+}
+.modal,
+.overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  z-index: 9999;
+}
+.overlay {
+    background-color: #ecf0f3;
+  }
+  .modal-content {
+    display: flex;
+
+    position: absolute;
+    top: 12%;
+    left: 8%;
+    line-height: 1.4;
+    background: #f0f3f5;
+    padding: 14px 28px;
+    border-radius: 3px;
+    max-width: 85%;
+    min-width: 60%;
+    z-index: 9999;
+    box-shadow: 4px 4px 8px #cbcbcb, -4px -4px 8px #ffffff;
+    padding: 50px;
+    border-radius: 10px;
+  }
+  .img-container #imgs{
+    border-radius: 20px;
+    width: 600px;
+    height: 600px;
+  }
+  .desc-content{
+    margin: 3rem 8rem 3rem 8rem;
+  }
+  .desc-content h1{
+    text-transform: capitalize;
+    font-size: 5rem;
+    margin-bottom: 2rem;
+  }
+  .desc-content p{
+    font-size: 1rem;
+    line-height: 2rem;
+  }
+
+
+
+  @media (max-width: 768px) {
+    .modal,
+    .overlay {
+      overflow: scroll;
+    }
+  
+   .modal-content {
+      align-items: center;
+      flex-direction: column;
+    }
+    .img-container #imgs{
+        margin-left: -20px;
+        border-radius: 20px;
+        width: 300px;
+        height: 300px;
+      }
+      .desc-content{
+        margin: 1rem 1rem 1rem 1rem;
+      } 
+      .desc-content h1{
+        font-size: 3rem;
+        margin-bottom: 1rem;
+      }
+  }
+
+  @media (max-width: 1000px) {
+    .modal,
+    .overlay {
+      overflow: scroll;
+    }
+  
+   .modal-content {
+      align-items: center;
+      flex-direction: column;
+    }
+    .img-container #imgs{
+        margin-left: -20px;
+        border-radius: 20px;
+        width: 450px;
+        height: 450px;
+      }
+      .desc-content{
+        margin: 1rem 3rem 1rem 3rem;
+      } 
+      .desc-content h1{
+        font-size: 3rem;
+        margin-bottom: 1rem;
+      }
+  }
+
+
+  @media (max-width: 1100px) {
+    .modal,
+    .overlay {
+      overflow: scroll;
+    }
+  
+   .modal-content {
+      align-items: center;
+      /* flex-direction: column; */
+    }
+    .img-container #imgs{
+        margin-left: -20px;
+        border-radius: 20px;
+        width: 350px;
+        height: 350px;
+      }
+      .desc-content{
+        margin: 0.5rem 3rem 1rem 3rem;
+      } 
+      .desc-content h1{
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+      }
+      .desc-content p{
+        font-size: 1rem;
+        line-height: 1.7rem;
+      }
+
+  }
+  @media (max-width: 1500px) {
+    .modal,
+    .overlay {
+      overflow: scroll;
+    }
+  
+   .modal-content {
+      align-items: center;
+      /* flex-direction: column; */
+    }
+    .img-container #imgs{
+        margin-left: -20px;
+        border-radius: 20px;
+        width: 400px;
+        height: 400px;
+      }
+      .desc-content{
+        margin: 1rem 3rem 1rem 3rem;
+      } 
+      .desc-content h1{
+        font-size: 3rem;
+        margin-bottom: 1rem;
+      }
+  }
+
+

@@ -1,0 +1,31 @@
+.showcase{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40vh;
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) ,url("../../../public/images/bg3.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.wrapper {
+    text-align: center;
+}
+
+.wrapper h1{
+    color: white;
+    font-size: 4rem;
+    text-shadow: 0 1rem 2rem rgba(0, 0, 0,0.8);
+}
+.wrapper p{
+    color: white;
+    font-size: 1.4rem;
+}
+@media (max-width:800px) {
+    .wrapper h1{
+       font-size: 3rem;
+    }
+    .wrapper p{
+        color: white;
+        font-size: 1.3rem;
+    }
+}

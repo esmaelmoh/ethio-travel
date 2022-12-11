@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.about-us{
+    margin-top: 30px;
+    text-align: center;
+    
+    text-align: center;
+    position: relative;
+    
+}
+.about-us h1{
+    font-size: 3rem;
+    color:   rgb(41, 35, 35);
+  }
+  .barr{
+    display: flex;
+    justify-content: center;
+  }
+.bar{
+    position: absolute;
+    text-align: center;
+    width: 6rem;
+    height: 4px;
+    background-color: rgb(41, 228, 17);
+}
+.about-container{
+    padding: 60px 0px 100px 0px;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-around;
+   
+}
+.card{
+
+    padding: 30px 20px 20px 20px;
+    flex: 1 1 25rem;
+    box-shadow:0 0.5rem 1rem rgba(1, 36, 21, 0.1) ;
+    border-radius: 10px;
+     
+}
+
+.card h1{
+    margin-bottom: 10px;
+}

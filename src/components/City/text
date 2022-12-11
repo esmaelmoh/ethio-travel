@@ -1,0 +1,75 @@
+// import React,{useState} from 'react'
+// import '../City/City.css'
+// import data from "../City/data"
+
+// const City = () => {
+//     console.log(data);
+//     const [modal , setModal] = useState(true);
+//     const [cities, setCities] = useState(data);
+
+//     // if (modal) {
+//     //   document.body.classList.add("active-modal")
+//     // } else {
+//     //   document.body.classList.remove("active-modal")
+//     // }
+//     const toggleModal = () => {
+//       setModal(!modal)
+//     }
+//   return (
+//     <>
+//     <section>
+//          <div className="about-us">
+//         <h1 >Our Tours</h1>
+        
+//         </div>
+
+//         <div className="barr"><div className="bar"></div></div>
+//     <article>
+//     {cities.map((city)=>{
+//         const {id,image,desc,name} = city;
+        
+//         return(
+            
+//         <div className='container' key={id}>
+//             <div className="img-container">
+//                 <img src={image} alt="" />
+//                 <h2>{name}</h2>
+//                 <div className="desc-container">
+//                 <p>{desc}</p>
+//                 </div>
+                
+//                 <div className="btn">
+//                 <button>read more</button>
+//                 </div>
+            
+//         </div>
+//     </div>
+//         )
+//     })}
+//     </article>
+//     </section>
+//     {
+//       modal &&(
+//         <div className="modal">
+//           <div onClick={toggleModal} className='overlay'></div>
+//            <div className='modal-content d_flex'>
+//            <div className="img-container">
+            
+            
+//         </div>
+//            </div>
+//         </div>
+//       )
+//     }
+//     </>
+//   )
+// }
+
+// export default City
+
+//  <li><a href="#">home</a></li>
+//                     <li><a href="#">about us</a></li>
+//                     <li><a href="#">our tours</a></li>
+//                     <li><a href="#">about ethiopia</a></li>
+//                     <li><a href="#">usefull informaion</a></li>
+//                     <li><a href="#">contact</a></li> 
